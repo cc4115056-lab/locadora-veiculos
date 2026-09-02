@@ -1,13 +1,15 @@
 server:
-  port: 8087
+  port: ${PORT:8087}
 
 spring:
   application:
     name: locadora-backend
+
   datasource:
-    url: jdbc:postgresql://localhost:5439/locadora_db
-    username: postgres
-    password: postgres
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
   jpa:
     hibernate:
       ddl-auto: update
