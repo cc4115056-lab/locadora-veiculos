@@ -6,9 +6,9 @@ spring:
     name: locadora-backend
 
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:5439/locadora_db
+    username: postgres
+    password: postgres
 
   jpa:
     hibernate:
